@@ -1,18 +1,61 @@
-# atc-vm-wiki
+# 📖 atc-vm-wiki
 
-Wiki für [atc-vm](https://github.com/A-TownChain-Okosystems/atc-vm)
+> ## 🤖 Fuer KI-Agenten — Pflichtlektuere vor jeder Aenderung
+> Governance liegt zentral im Wiki-Repo `a-townchain-os-docs`:
+> 1. [`AGENT_POLICY.md`](https://github.com/A-TownChain-Okosystems/a-townchain-os-docs/blob/main/docs/AGENT_POLICY.md) — verbindliche Regeln, Reality-Check, Konsolidierungsziel
+> 2. [`AGENT_COORDINATION.md`](https://github.com/A-TownChain-Okosystems/a-townchain-os-docs/blob/main/docs/AGENT_COORDINATION.md) — wer arbeitet gerade woran, Todos, Agent-IDs
+> 3. [`DECISIONS_REGISTER.md`](https://github.com/A-TownChain-Okosystems/a-townchain-os-docs/blob/main/docs/DECISIONS_REGISTER.md) — verbindliche Architektur-Entscheidungen
 
-Dokumentation für ATCLang Virtual Machine
+> Offizielle Dokumentation für [atc-vm](https://github.com/A-TownChain-Okosystems/atc-vm) — **ATVM Virtual Machine Engine** im A-TownChain Ökosystem
 
-## Dokumentation
-- [Architektur](ARCHITECTURE.md)
-- [API Reference](API.md)
-- [Module](MODULES.md)
-- [Status](STATUS.md)
+[![Code](https://img.shields.io/badge/Code-atc--vm-blue)](https://github.com/A-TownChain-Okosystems/atc-vm)
+[![KAI-OS](https://img.shields.io/badge/KAI--OS-Wiki-purple)](https://github.com/A-TownChain-Okosystems/a-townchain-os-docs)
+[![Ökosystem](https://img.shields.io/badge/Ökosystem-A--TownChain-green)](https://github.com/A-TownChain-Okosystems)
 
-## Übersicht
-Dieses Wiki dokumentiert das `atc-vm`-Repo, Teil des A-TownChain OS Ökosystems (70 Repos).
+---
 
-Org: [A-TownChain-Okosystems](https://github.com/A-TownChain-Okosystems)
+## 📦 Zugehöriges Code-Repo
 
-[agent: aurora-base44-superagent-6a2756186106d6f0fbb105b5]
+**→ [atc-vm](https://github.com/A-TownChain-Okosystems/atc-vm)** (`main` Branch)
+
+---
+
+## 🌐 A-TownChain Ökosystem
+
+Alle Repos des Ökosystems auf einen Blick:
+
+| Repo | Layer | Beschreibung |
+|------|-------|-------------|
+| [a-townchain-os](https://github.com/A-TownChain-Okosystems/a-townchain-os) | `L2–L4` | Haupt-Repo — KAI-OS Core, AI, Blockchain |
+| [a-townchain-os-docs](https://github.com/A-TownChain-Okosystems/a-townchain-os-docs) | `L0` | Zentrale Governance & Master-Spezifikation |
+| [atc-kernel](https://github.com/A-TownChain-Okosystems/atc-kernel) | `L2` | Microkernel, IPC, ATCFS, Consensus |
+| [atcnet](https://github.com/A-TownChain-Okosystems/atcnet) | `L5` | P2P Netzwerk, Kademlia DHT |
+| [atc-gateway](https://github.com/A-TownChain-Okosystems/atc-gateway) | `L7` | API Gateway Port 4000 |
+| [atclang](https://github.com/A-TownChain-Okosystems/atclang) | `L2–L4` | ATCLang Kern-Compiler |
+| [atc-atclang](https://github.com/A-TownChain-Okosystems/atc-atclang) | `L2–L4` | Erweiterungssatz & Toolchain |
+| [atc-vm](https://github.com/A-TownChain-Okosystems/atc-vm) | `L2` | Standalone ATVM Virtual Machine Engine |
+| [atc-stdlib](https://github.com/A-TownChain-Okosystems/atc-stdlib) | `L2–L3` | ATCLang Standard Library |
+| [atc-atcpkg](https://github.com/A-TownChain-Okosystems/atc-atcpkg) | `L3` | Package Manager |
+| [atc-contracts](https://github.com/A-TownChain-Okosystems/atc-contracts) | `L4/L11` | Smart Contracts |
+| [atc-franchise](https://github.com/A-TownChain-Okosystems/atc-franchise) | `L10/L8` | Business DAO |
+| [atc-ui](https://github.com/A-TownChain-Okosystems/atc-ui) | `L10` | Dashboard & UI |
+| [atc-standards](https://github.com/A-TownChain-Okosystems/atc-standards) | `L0` | Protokoll-Standards |
+
+---
+
+## 📑 Themen-Dokumentation
+
+- **[docs/ARCHITECTURE.md](docs/ARCHITECTURE.md)** — Architektur-Spezifikation der ATVM Engine
+- **[docs/OPCODES.md](docs/OPCODES.md)** — Vollständiges Instruktions- & Opcode-Verzeichnis
+- **[docs/ROADMAP.md](docs/ROADMAP.md)** — VM Entwicklungs- und Optimierungs-Roadmap
+
+---
+
+*Teil des [A-TownChain Ökosystems](https://github.com/A-TownChain-Okosystems) · v1.0.0 · Stand: 2026-08-05*
+
+---
+
+## ⚖️ Lizenz
+
+Copyright (c) 2026 Michael Wroblewski / ShivaCore / A-TownChain-Okosystems. **All Rights Reserved.**
+ATC-LIC Lizenzmodell.
