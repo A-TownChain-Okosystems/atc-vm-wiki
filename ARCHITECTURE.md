@@ -1,38 +1,30 @@
-# 🌳 Architektur — atc-vm-wiki
+# ARCHITECTURE.md — atc-vm
 
-> **Stand:** 2026-08-06 | **Commit:** 4b8bab6
-> **Teil von:** [A-TownChain Ökosystem](https://github.com/A-TownChain-Okosystems)
+> Copyright © Michael Wroblewski / A-TownChain-Okosystems. All Rights Reserved.
 
-## Statistik
-
-| Metrik | Wert |
-|--------|------|
-| Dateien | 13 |
-| Zeilen | 219 |
-| .atc | 0 |
-| .py | 0 |
-| .rs | 0 |
-| .ts/.tsx | 0 |
-| .md | 11 |
-
-## Verzeichnisstruktur
-
-```
-├── docs/ (5 files, 112 lines)
-│   ├── API.md (14 lines)
-│   ├── ARCHITECTURE.md (35 lines)
-│   ├── MODULES.md (14 lines)
-│   ├── OPCODES.md (26 lines)
-│   └── ROADMAP.md (23 lines)
-├── .gitignore
-├── ARCHITECTURE.md (14 lines)
-├── FILE_REGISTER.md (16 lines)
-├── LICENSE
-├── MODULES.md (10 lines)
-├── README.md (24 lines)
-├── ROADMAP.md (8 lines)
-└── STATUS.md (35 lines)
+## File Tree
+```tree
+atc-vm/
+├── Cargo.toml — ShivaVM core execution engine manifest (no_std)
+├── .gitignore — Git ignore rules
+└── src/
+    ├── lib.rs — ShivaVM entry point, execution environment, and state machine runner
+    ├── opcodes.rs — Instruction set architecture opcode definitions and instruction decoder
+    ├── stack.rs — High-performance operand stack and call stack implementation
+    ├── gas.rs — Deterministic opcode gas metering and resource limit enforcement
+    └── storage.rs — Persistent state trie storage interface and state rollback support
 ```
 
----
-*Auto-generiert 2026-08-06 · Aurora (MasterBrain · Base44)*
+## Module Descriptions
+- src/lib.rs — Main virtual machine execution engine, bytecode runner loop, and environment host bindings.
+- src/opcodes.rs — Complete specification and decoding matrix for ShivaVM instruction opcodes.
+- src/stack.rs — Efficient fixed-capacity stack operations with strict push/pop boundary checks.
+- src/gas.rs — Tracks instruction gas costs to guarantee deterministic execution and prevent infinite loops.
+- src/storage.rs — Key-value state storage interface backing virtual machine execution state.
+
+## Build System
+- Cargo.toml — `#![no_std]` crate usable in on-chain smart contracts or embedded node runtimes.
+
+## Dependencies
+- byteorder — Fast endianness conversion for bytecode parsing without standard library.
+- digest — Cryptographic hash abstractions for state root calculation.
