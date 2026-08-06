@@ -1,44 +1,35 @@
-# 🏛️ ATVM (ATCLang Virtual Machine) Architecture Specification
+# 🏛️ Architektur — atc-vm
 
-> **Repository:** [atc-vm](https://github.com/A-TownChain-Okosystems/atc-vm)  
-> **Stand:** 2026-08-05  
-
----
-
-## 📌 Architektur-Konzept
-
-Die **ATVM** ist eine Stack-basierte, isolierte virtuelle Maschine. Sie verarbeitet deterministischen Bytecode, der aus ATCLang-Programmen kompiliert wurde.
+> **Repo:** [atc-vm](https://github.com/A-TownChain-Okosystems/atc-vm)
+> **Layer:** L4 | **Titel:** Virtual Machine
+> **Stand:** 2026-08-06 | **Version:** v1.0.0
 
 ---
 
-## 🧠 Kernkomponenten
+## Übersicht
 
-```
-+---------------------------------------------------------------+
-|                       ATVM Runtime State                      |
-+---------------------------------------------------------------+
-|                                                               |
-|  [ Instruction Pointer (IP) ]   [ Frame Pointer (FP) ]        |
-|                                                               |
-|  [ Operand Stack ]              [ Call Stack / Frames ]       |
-|  - Values, Local Variables      - Function Context, Returns   |
-|                                                               |
-|  [ Memory / Heap Registry ]     [ Gas Counter & Limits ]      |
-|  - Dynamic Structures           - Instruction Cost Tracking   |
-|                                                               |
-+---------------------------------------------------------------+
-                               |
-                               v
-+---------------------------------------------------------------+
-|                   Opcode Dispatcher Loop                      |
-| (Fetches Opcode, Decodes, Executes State Mutation, Costs Gas) |
-+---------------------------------------------------------------+
-```
+ATCLang Virtual Machine (ATVM): 27 Opcodes, Gas-Modell, Stack-basiert.
+
+## Komponenten
+
+## Abhängigkeiten
+
+Dieses Repo ist Teil des A-TownChain Ökosystems und nutzt:
+- [ATCLang Compiler](https://github.com/A-TownChain-Okosystems/atclang) für .atc Module
+- [ATC Standards](https://github.com/A-TownChain-Okosystems/atc-standards) für Spezifikationen
+- [Haupt-Wiki](https://github.com/A-TownChain-Okosystems/a-townchain-os-docs) für Governance
+
+## Statistik
+
+| Metrik | Wert |
+|--------|------|
+| Code-Dateien | 0 |
+| .atc | 0 |
+| .py | 0 |
+| .rs | 0 |
+| .ts | 0 |
+| Total Zeilen | 0 |
 
 ---
 
-## 🔒 Security & ATC-99 Policy Enforcement
-
-1. **Sandboxing:** Keine ungeprüften Systemaufrufe. Alle I/O-, Netzwerk- oder Chain-Interaktionen laufen über abgesicherte Syscalls.
-2. **Gas Metering:** Jede Bytecode-Instruktion verbraucht eine definierte Menge an Gas. Bei Unterschreitung bricht die Ausführung deterministisch ab (`OUT_OF_GAS`).
-3. **ATC-99 License Verification:** Vor der ersten Instruktion verifiziert ATVM die Gültigkeit der Smart Contract-Lizenz.
+*Auto-generiert 2026-08-06 · Aurora (MasterBrain · Base44)*

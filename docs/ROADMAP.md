@@ -1,21 +1,23 @@
-# 🗺️ ATVM (Virtual Machine) Roadmap
+# 🗺️ Roadmap — atc-vm
 
-> **Repository:** [atc-vm](https://github.com/A-TownChain-Okosystems/atc-vm)  
-> **Stand:** 2026-08-05  
+> **Repo:** [atc-vm](https://github.com/A-TownChain-Okosystems/atc-vm)
+> **Layer:** L4 | **Stand:** 2026-08-06
 
 ---
 
-## 🎯 Phase 1: Core Engine Specification & Prototype (Aktuell)
-- [x] Definition des Opcode-Sets und Instruction Execution Model
-- [x] Memory- & Stack-Spezifikation
-- [x] Integriertes Gas-Metering und Limit Enforcement
-- [x] ATC-99 License Check Hook Design
+## Sprint-Zuordnung
 
-## 🎯 Phase 2: Performance & Benchmarking (Q3/2026)
-- [ ] C / Rust Native Core Portierung für Maximaldurchsatz
-- [ ] Multi-Threaded Concurrent Contract Execution Isolation
-- [ ] Optimiertes Memory Pooling & GC (Garbage Collection)
+| Sprint | Phase | Status | Aufgaben |
+|--------|-------|--------|----------|
+| 2.1 | ATCLang VM | Geplant | — |
+| 2.5 | Smart Contracts | Aktiv | — |
 
-## 🎯 Phase 3: Formal Verification & Audit (Q4/2026)
-- [ ] Formale Verifikation des Opcode Dispatchers
-- [ ] Fuzzing-Tests für Bytecode Parser und Boundary Checks
+## Meilensteine
+
+1. **v0.3** — ATCLang Parser stabil, Basis-Module migriert
+2. **v0.4** — Struct-Inheritance, Kernel-Support, VM Opcodes
+3. **v1.0** — Vollständige Implementierung, Test-Abdeckung >80%
+
+---
+
+*Auto-generiert 2026-08-06 · Aurora (MasterBrain · Base44)*

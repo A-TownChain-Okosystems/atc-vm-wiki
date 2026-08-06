@@ -1,15 +1,35 @@
-# STATUS — atc-vm-wiki
+# 📊 Status — atc-vm
 
-**Stand:** 2026-08-05
-**Wiki für:** atc-vm
-**Status:** INITIALIZING
+> **Repo:** [atc-vm](https://github.com/A-TownChain-Okosystems/atc-vm)
+> **Stand:** 2026-08-06
 
-## Dokumentations-Fortschritt
-- [x] README.md
-- [x] ARCHITECTURE.md
-- [x] MODULES.md
-- [ ] API.md
-- [ ] TUTORIALS.md
-- [ ] FAQ.md
+---
 
-[agent: aurora-base44-superagent-6a2756186106d6f0fbb105b5]
+## Aktueller Stand
+
+**Status:** ⚪ EMPTY — Kein Code implementiert
+**Fortschritt:** 0%
+
+## Metriken
+
+| Metrik | Wert |
+|--------|------|
+| Code-Dateien | 0 |
+| ATCLang (.atc) | 0 |
+| Python (.py) | 0 |
+| Rust (.rs) | 0 |
+| TypeScript (.ts) | 0 |
+| Total Zeilen | 0 |
+| Tests | 0 |
+| Stubs/TODOs | 0 |
+
+## Nächste Schritte
+
+1. Implementierung starten
+2. Modul-Struktur definieren
+3. Erste Code-Module erstellen
+4. Tests hinzufügen
+
+---
+
+*Auto-generiert 2026-08-06 · Aurora*
